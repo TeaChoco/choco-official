@@ -1,0 +1,35 @@
+.uid {
+    z-index: 100;
+    right: 20px;
+    bottom: 10px;
+    position: fixed;
+    user-select: none;
+    color: var(--themeT);
+    text-shadow:
+        -2px -2px var(--themeS),
+        2px 2px var(--themeS),
+        2px -2px var(--themeS),
+        -2px 2px var(--themeS),
+        0 -2px var(--themeS),
+        0 2px var(--themeS),
+        2px 0 var(--themeS),
+        -2px 0 var(--themeS),
+        -1px -1px var(--themeS),
+        1px 1px var(--themeS),
+        1px -1px var(--themeS),
+        -1px 1px var(--themeS),
+        0 -1px var(--themeS),
+        0 1px var(--themeS),
+        1px 0 var(--themeS),
+        -1px 0 var(--themeS);
+}
+
+@media screen and (max-width: 880px) {
+    .uid {
+        bottom: 75px;
+    }
+
+    .uid.nores {
+        bottom: 10px;
+    }
+}

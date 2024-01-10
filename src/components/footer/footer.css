@@ -1,0 +1,96 @@
+/* =======================on-linkFooter============================= */
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    height: calc(100px * var(--responsive));
+}
+
+.linkContact {
+    display: flex;
+    position: relative;
+
+    & li {
+        margin: 0 10px;
+        cursor: pointer;
+        list-style: none;
+        position: relative;
+
+        & a {
+            text-decoration: none;
+
+            & .fa-brands {
+                transition: 0.5s;
+                color: var(--theme1);
+                font-size: calc(3rem * var(--responsive));
+            }
+
+            &::before {
+                top: 0;
+                left: 0;
+                height: 0;
+                font-size: 3rem;
+                overflow: hidden;
+                position: absolute;
+                font-family: "FontAwesome";
+                transition: 0.5s ease-in-out;
+
+                & i {
+                    transition: 0.5s;
+                    position: relative;
+                }
+            }
+        }
+
+        &:hover a .fa-brands {
+            color: var(--themeT);
+        }
+    }
+}
+
+.footerBtnUp {
+    opacity: 0;
+    bottom: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: all .4s;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    background-color: var(--theme);
+    border: 3px solid var(--themeT);
+
+    &.active {
+        opacity: 1;
+        bottom: 40px;
+        transition: all 0.5s;
+        pointer-events: auto;
+    }
+
+    & i {
+        font-size: 25px;
+        color: var(--themeT);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    footer {
+        bottom: 60px;
+    }
+
+    .footer {
+        height: 160px;
+    }
+
+    .footerBtnUp.active {
+        bottom: 100px;
+    }
+}
+
+/* =====================off-linkFooter=========================== */

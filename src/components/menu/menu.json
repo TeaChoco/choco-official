@@ -1,0 +1,60 @@
+[
+    {
+        "menu": "home",
+        "clr": "#E67E22",
+        "icon": "faHouse"
+    },
+    {
+        "menu": "applications",
+        "clr": "#2ECC71",
+        "icon": "faStar"
+    },
+    {
+        "menu": "novels",
+        "clr": "#225BDD",
+        "icon": "faBookOpen"
+    },
+    {
+        "menu": "profile",
+        "clr": "#9B59B6",
+        "icon": "faUser",
+        "param": "/:uid?"
+    },
+    {
+        "menu": "chat",
+        "clr": "#F7DC6F",
+        "icon": "faComment"
+    },
+    {
+        "menu": "character",
+        "clr": "#229954",
+        "icon": "faUserGroup"
+    },
+    {
+        "menu": "inventory",
+        "clr": "#A04000",
+        "icon": "faWarehouse"
+    },
+    {
+        "menu": "shop",
+        "clr": "#3498DB",
+        "icon": "faCartShopping",
+        "param": "/:page?"
+    },
+    {
+        "menu": "mail",
+        "clr": "#E74C3C",
+        "icon": "faEnvelope"
+    },
+    {
+        "menu": "news",
+        "clr": "#D0D3D4",
+        "icon": "faNewspaper"
+    },
+    {
+        "menu": "setting",
+        "clr": "#5D6D7E",
+        "icon": "faGear",
+        "param": "/:page?"
+    }
+]

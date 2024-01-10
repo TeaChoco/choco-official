@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "name": "Japan learning",
+        "type": [
+            {
+                "emoji": "📰",
+                "text": "Read"
+            },
+            {
+                "emoji": "💡",
+                "text": "Learn"
+            },
+            {
+                "emoji": "💰",
+                "text": "Get koin"
+            }
+        ],
+        "size": "full",
+        "platform": 2,
+        "languages": [
+            "en",
+            "th"
+        ],
+        "version": {
+            "0.1": {
+                "date": "29062023"
+            },
+            "0.14": {
+                "date": "11102023"
+            }
+        },
+        "developer": [
+            {
+                "name": "Tea Choco"
+            }
+        ],
+        "price": 0,
+        "rating": [],
+        "explanation": {
+            "en": "juse test application",
+            "th": "แค่ทดสอบแอปพลิเคชัน"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Uno game card",
+        "type": [
+            {
+                "emoji": "🎮",
+                "text": "Game"
+            },
+            {
+                "emoji": "🃏",
+                "text": "Card"
+            },
+            {
+                "emoji": "🌏",
+                "text": "Online"
+            },
+            {
+                "emoji": "🤪",
+                "text": "Multiplayer"
+            },
+            {
+                "emoji": "🤖",
+                "text": "Bot"
+            },
+            {
+                "emoji": "💰",
+                "text": "Get koin"
+            }
+        ],
+        "size": "full",
+        "platform": 2,
+        "languages": [
+            "en",
+            "th"
+        ],
+        "version": {
+            "0.1": {
+                "date": "06072023"
+            },
+            "0.14": {
+                "date": "07072023"
+            }
+        },
+        "developer": [
+            {
+                "name": "Tea Choco"
+            }
+        ],
+        "price": 0,
+        "rating": [],
+        "explanation": {
+            "en": "juse test application",
+            "th": "แค่ทดสอบแอปพลิเคชัน"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Pixel role of fantasy",
+        "type": [
+            {
+                "emoji": "🎮",
+                "text": "Game"
+            },
+            {
+                "emoji": "",
+                "text": "RPG"
+            },
+            {
+                "emoji": "",
+                "text": "Pixel"
+            },
+            {
+                "emoji": "🌏",
+                "text": "Online"
+            },
+            {
+                "emoji": "🤪",
+                "text": "Multiplayer"
+            },
+            {
+                "emoji": "🤖",
+                "text": "Bot"
+            },
+            {
+                "emoji": "💰",
+                "text": "Get koin"
+            }
+        ],
+        "size": "full",
+        "platform": 2,
+        "languages": [
+            "en",
+            "th"
+        ],
+        "version": {
+            "0.1": {
+                "date": "24072023"
+            }
+        },
+        "developer": [
+            {
+                "name": "Tea Choco"
+            }
+        ],
+        "price": 0,
+        "rating": [],
+        "explanation": {
+            "en": "juse test application",
+            "th": "แค่ทดสอบแอปพลิเคชัน"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Poketree",
+        "type": [
+            {
+                "emoji": "🎮",
+                "text": "Game"
+            },
+            {
+                "emoji": "",
+                "text": "RPG"
+            },
+            {
+                "emoji": "",
+                "text": "Pixel"
+            },
+            {
+                "emoji": "🌏",
+                "text": "Online"
+            },
+            {
+                "emoji": "🤪",
+                "text": "Multiplayer"
+            },
+            {
+                "emoji": "🤖",
+                "text": "Bot"
+            },
+            {
+                "emoji": "💰",
+                "text": "Get koin"
+            }
+        ],
+        "size": "full",
+        "platform": 2,
+        "languages": [
+            "en",
+            "th"
+        ],
+        "version": {
+            "0.1": {
+                "date": "06102023"
+            }
+        },
+        "developer": [
+            {
+                "name": "Tea Choco"
+            }
+        ],
+        "price": 0,
+        "rating": [],
+        "explanation": {
+            "en": "juse test application",
+            "th": "แค่ทดสอบแอปพลิเคชัน"
+        }
+    }
+]

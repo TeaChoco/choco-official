@@ -1,0 +1,116 @@
+.srccontent.chat .nofound {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: var(--themeA2);
+}
+
+.srccontent.chat .chatList::-webkit-scrollbar {
+    width: 0px;
+}
+
+.srccontent.chat .chatList {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    padding-top: 20px;
+}
+
+.srccontent.chat .chatList button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--themeA2);
+    justify-content: space-between;
+    padding: calc(15px * var(--responsive));
+    border-bottom: 1px solid var(--themeA1);
+}
+
+.srccontent.chat .chatList button:hover {
+    background: var(--themeA1);
+}
+
+.srccontent.chat .chatList button:last-child {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.srccontent.chat .chatList button .chatcontent {
+    display: flex;
+    align-items: center;
+}
+
+.srccontent.chat .chatList button .chatcontent .profileImg {
+    object-fit: cover;
+    width: calc(50px * var(--responsive));
+    height: calc(50px * var(--responsive));
+}
+
+.srccontent.chat :is(.chatList) .details {
+    display: flex;
+    margin-left: 15px;
+    color: var(--themeT);
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(50px * var(--responsive));
+}
+
+.srccontent.chat :is(.chatList) .details span {
+    display: flex;
+    font-size: calc(18px * var(--responsive));
+    font-weight: calc(500 * var(--responsive));
+}
+
+.srccontent.chat .chatList button .chatcontent p {
+    max-width: 20em;
+    user-select: none;
+    display: inline-flex;
+    color: var(--theme4);
+    align-items: flex-start;
+    font-size: calc(1rem * var(--responsive));
+}
+
+.srccontent.chat .chatList button .status-dot p {
+    display: inline;
+    user-select: none;
+    color: var(--theme4);
+}
+
+.srccontent.chat .profileId {
+    display: inline;
+    margin-left: 0.5rem;
+    color: var(--theme4);
+}
+
+.srccontent.chat .chatList button .status-dot {
+    position: absolute;
+    color: rgb(0, 255, 0);
+    right: calc(60px * var(--responsive));
+    font-size: calc(12px * var(--responsive));
+}
+
+.srccontent.chat .chatList button .status-dot.offline {
+    color: var(--themeT);
+}
+
+.srccontent.chat .chatList button .status-dot i {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 440px) {
+    .srccontent.chat .chatList a .status-dot {
+        right: 30px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .srccontent.chat .chatList button .status-dot p {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+:root {
+    --theme: hsl(0, 0%, 0%);
+    --theme1: hsl(0, 0%, 15%);
+    --theme2: hsl(0, 0%, 20%);
+    --theme3: hsl(0, 0%, 40%);
+    --theme4: hsl(0, 0%, 60%);
+
+    --themeA: hsla(0, 0%, 0%, 0.7);
+    --themeA1: hsla(0, 0%, 15%, 0.7);
+    --themeA2: hsla(0, 0%, 20%, 0.7);
+    --themeA3: hsla(0, 0%, 40%, 0.7);
+    --themeA4: hsla(0, 0%, 60%, 0.7);
+
+    --themeAT: hsla(0, 0%, 100%, 0.5);
+    --themeS: hsla(0, 0%, 0%, 0.8);
+    --themeT: hsl(0, 0%, 100%);
+    --themeB: hsl(0, 0%, 100%);
+
+    --themeZB: 0;
+    --themeZB1: 0;
+}

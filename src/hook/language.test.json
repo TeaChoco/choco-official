@@ -1,0 +1,1081 @@
+{
+    "language": [
+        "en",
+        "th",
+        "ja",
+        "zh"
+    ],
+    "general": {
+        "you": {
+            "en": "You",
+            "th": "คุณ",
+            "zh": "你"
+        },
+        "free": {
+            "en": "Free",
+            "th": "ฟรี",
+            "zh": "免费"
+        },
+        "next": {
+            "en": "Next",
+            "th": "ถัดไป",
+            "zh": "下一个"
+        },
+        "or": {
+            "en": "Or",
+            "th": "หรือ",
+            "zh": "或"
+        },
+        "and": {
+            "en": "And",
+            "th": "และ",
+            "zh": "和"
+        },
+        "edit": {
+            "en": "Edit",
+            "th": "แก้ไข",
+            "zh": "编辑"
+        },
+        "save": {
+            "en": "Save",
+            "th": "บันทึก",
+            "zh": "保存"
+        },
+        "cancel": {
+            "en": "Cancel",
+            "th": "ยกเลิก",
+            "zh": "取消"
+        },
+        "confirm": {
+            "en": "Confirm",
+            "th": "ยืนยัน",
+            "zh": "确认"
+        },
+        "details": {
+            "en": "Details",
+            "th": "รายละเอียด",
+            "zh": "细节"
+        },
+        "history": {
+            "en": "History",
+            "th": "ประวัติ",
+            "zh": "历史"
+        },
+        "number": {
+            "en": "Number",
+            "th": "หมายเลข",
+            "zh": "数字"
+        },
+        "amount": {
+            "en": "Amount",
+            "th": "จำนวน",
+            "zh": "数量"
+        },
+        "date": {
+            "en": "Date",
+            "th": "วันที่",
+            "zh": "日期"
+        },
+        "time": {
+            "day": {
+                "en": "Day",
+                "th": "วัน",
+                "zh": "Day"
+            },
+            "days": {
+                "en": "days",
+                "th": "วัน",
+                "zh": "days"
+            },
+            "hours": {
+                "en": "hours",
+                "th": "ชั่วโมง",
+                "zh": "时"
+            },
+            "minutes": {
+                "en": "minutes",
+                "th": "นาที",
+                "zh": "分"
+            },
+            "seconds": {
+                "en": "seconds",
+                "th": "วินาที",
+                "zh": "秒"
+            }
+        },
+        "empty": {
+            "en": "Empty",
+            "th": "ว่างเปล่า",
+            "zh": "空"
+        },
+        "nouserfound": {
+            "en": "No user found related",
+            "th": "ไม่พบผู้ใช้ที่เกี่ยวข้อง",
+            "zh": "没有找到关联的用户"
+        },
+        "loading": {
+            "en": "Loading",
+            "th": "กำลังโหลด",
+            "zh": "正在加载"
+        },
+        "ready": {
+            "en": "Ready",
+            "th": "พร้อม",
+            "zh": ""
+        },
+        "start": {
+            "en": "Start",
+            "th": "เริ่ม",
+            "zh": ""
+        },
+        "exit": {
+            "en": "Exit",
+            "th": "ออก",
+            "zh": ""
+        },
+        "back": {
+            "en": "Back",
+            "th": "กลับ",
+            "zh": ""
+        },
+        "room": {
+            "create": {
+                "en": "Create room",
+                "th": "สร้างห้อง",
+                "zh": ""
+            },
+            "join": {
+                "en": "Join room",
+                "th": "เข้าร่วมห้อง",
+                "zh": ""
+            },
+            "searchid": {
+                "en": "Search room ID",
+                "th": "ค้นหา ID ห้อง",
+                "zh": ""
+            }
+        }
+    },
+    "searchInput": {
+        "search": {
+            "en": "Search...",
+            "th": "ค้นหา...",
+            "zh": ""
+        },
+        "searchNameUid": {
+            "en": "Search name or Uid",
+            "th": "ค้นหาชื่อหรือ Uid",
+            "zh": ""
+        }
+    },
+    "listLang": {
+        "selectedLang": {
+            "en": "English",
+            "th": "ไทย",
+            "zh": "中文",
+            "comment": "this is your language"
+        },
+        "list en": {
+            "en": "English",
+            "th": "อังกฤษ",
+            "zh": "英语"
+        },
+        "list th": {
+            "en": "Thai",
+            "th": "ไทย",
+            "zh": "泰语"
+        },
+        "list ja": {
+            "en": "Japanese",
+            "th": "ญี่ปุ่น",
+            "zh": "日语"
+        },
+        "list zh": {
+            "en": "Chinese",
+            "th": "จีน",
+            "zh": "中文"
+        }
+    },
+    "login": {
+        "login": {
+            "en": "Log in",
+            "th": "เข้าสู่ระบบ",
+            "zh": "登录"
+        },
+        "logout": {
+            "en": "Log out",
+            "th": "ออกจากระบบ",
+            "zh": "登出"
+        },
+        "register": {
+            "en": "Register",
+            "th": "ลงทะเบียน",
+            "zh": "注册"
+        },
+        "enterotp": {
+            "en": "Enter OTP",
+            "th": "ป้อน OTP",
+            "zh": "进入OTP"
+        },
+        "yourfriend": {
+            "en": "Your friend",
+            "th": "เพื่อนของคุณ",
+            "zh": "你的好友"
+        },
+        "verifyidentity": {
+            "en": "Verify identity",
+            "th": "ยืนยันตัวตน"
+        },
+        "completedregistration": {
+            "en": "Completed registration",
+            "th": "ลงทะเบียนสำเร็จ",
+            "zh": "完成注册"
+        },
+        "name": {
+            "en": "Name",
+            "th": "ชื่อ",
+            "zh": "姓名"
+        },
+        "username": {
+            "en": "Username",
+            "th": "ชื่อผู้ใช้",
+            "zh": "用户名"
+        },
+        "password": {
+            "en": "Password",
+            "th": "รหัสผ่าน",
+            "zh": "密码"
+        },
+        "rememberme": {
+            "en": "Remember me",
+            "th": "จดจำฉัน",
+            "zh": "记住我"
+        },
+        "passwordconfirm": {
+            "en": "Password confirm",
+            "th": "ยืนยันรหัสผ่าน",
+            "zh": "密码确认"
+        },
+        "email": {
+            "en": "Email",
+            "th": "อีเมล",
+            "zh": "电子邮件"
+        },
+        "sendagain": {
+            "en": "Send again",
+            "th": "ส่งอีกครั้ง",
+            "zh": "重新发送"
+        },
+        "examine": {
+            "en": "Examine",
+            "th": "ตรวจสอบ",
+            "zh": "Examine"
+        },
+        "unknowuser": {
+            "en": "Unknow user",
+            "th": "ผู้ใช้ที่ไม่รู้จัก",
+            "zh": "未知用户"
+        },
+        "uidyourfriend": {
+            "en": "UID Your friend",
+            "th": "UID เพื่อนของคุณ",
+            "zh": "你的好友UID"
+        },
+        "loginnow": {
+            "en": "Log in now",
+            "th": "เข้าสู่ระบบทันที",
+            "zh": "现在登录"
+        },
+        "signingoogle": {
+            "en": "Sign in with Google",
+            "th": "ลงชื่อเข้าใช้ด้วย Google",
+            "zh": "通过Google登录"
+        },
+        "verifygoogle": {
+            "en": "Verify identity with Google",
+            "th": "ยืนยันตัวตนด้วย Google"
+        },
+        "warninput": {
+            "username": {
+                "en": "This username has a user",
+                "th": "ชื่อผู้ใช้นี้มีผู้ใช้แล้ว",
+                "zh": "此用户名已存在"
+            },
+            "password": {
+                "en": "Must have more than 8 passwords",
+                "th": "ต้องมีรหัสผ่านมากกว่า 8 ตัวอักษร",
+                "zh": "必须输入大于8个字符"
+            },
+            "passwordconfirm": {
+                "en": "Password is not same",
+                "th": "รหัสผ่านไม่เหมือนกัน",
+                "zh": "密码不一致"
+            }
+        }
+    },
+    "menu": {
+        "textmenu": {
+            "en": "Menu",
+            "th": "เมนู",
+            "zh": "菜单"
+        },
+        "Home": {
+            "en": "Home",
+            "th": "หน้าหลัก",
+            "zh": "主页"
+        },
+        "Applications": {
+            "en": "Applications",
+            "th": "แอปพลิเคชั่น",
+            "zh": "应用"
+        },
+        "Novels": {
+            "en": "Novels",
+            "th": "นิยาย",
+            "zh": "文章"
+        },
+        "Profile": {
+            "en": "Profile",
+            "th": "โปรไฟล์",
+            "zh": "个人档案"
+        },
+        "Chat": {
+            "en": "Chat",
+            "th": "แชท",
+            "zh": "聊天"
+        },
+        "Character": {
+            "en": "Character",
+            "th": "ตัวละคร",
+            "zh": "角色"
+        },
+        "Inventory": {
+            "en": "Inventory",
+            "th": "รายการสิ่งของ",
+            "zh": "库存"
+        },
+        "Shop": {
+            "en": "Shop",
+            "th": "ร้านค้า",
+            "zh": "商店"
+        },
+        "Mail": {
+            "en": "Mail",
+            "th": "จดหมาย",
+            "zh": "邮件"
+        },
+        "News": {
+            "en": "News",
+            "th": "ข่าวสาร",
+            "zh": "新闻"
+        },
+        "Setting": {
+            "en": "Settings",
+            "th": "การตั้งค่า",
+            "zh": "设置"
+        }
+    },
+    "home": {
+        "welcome": {
+            "en": "Welcome to Choco website",
+            "th": "ยินดีต้อนรับเข้าสู่เว็บ Choco",
+            "zh": "欢迎进入Choco网站"
+        }
+    },
+    "application": {
+        "versionapp": {
+            "en": "Version",
+            "th": "เวอร์ชั่น",
+            "zh": "版本"
+        },
+        "infoApp": {
+            "startapplication": {
+                "en": "Start Application",
+                "th": "เริ่มแอปพลิเคชัน",
+                "zh": "开始应用"
+            },
+            "infoapp": {
+                "type": {
+                    "en": "Type",
+                    "th": "ประเภท",
+                    "zh": "类型"
+                },
+                "size": {
+                    "en": "Screen size",
+                    "th": "ขนาดหน้าจอ",
+                    "zh": "屏幕尺寸"
+                },
+                "full": {
+                    "en": "Full screen",
+                    "th": "เต็มหน้าจอ",
+                    "zh": "全屏"
+                },
+                "platform": {
+                    "en": "Platform",
+                    "th": "แพลตฟอร์ม",
+                    "zh": "平台"
+                },
+                "languages": {
+                    "en": "Languages",
+                    "th": "ภาษา",
+                    "zh": "语言"
+                },
+                "developer": {
+                    "en": "Developer",
+                    "th": "ผู้พัฒนา",
+                    "zh": "开发者"
+                },
+                "release": {
+                    "en": "Release date",
+                    "th": "วันที่วางจำหน่าย",
+                    "zh": "发布日期"
+                },
+                "update": {
+                    "en": "Day update",
+                    "th": "วันที่อัพเดท",
+                    "zh": "更新日"
+                },
+                "price": {
+                    "en": "Price",
+                    "th": "ราคา",
+                    "zh": "价格"
+                },
+                "rating": {
+                    "en": "Rating",
+                    "th": "การให้คะแนน",
+                    "zh": "评级"
+                },
+                "explanation": {
+                    "en": "Explanation",
+                    "th": "คำอธิบาย",
+                    "zh": "解释"
+                }
+            },
+            "comment": {
+                "commentText": {
+                    "en": "Type your comment",
+                    "th": "พิมพ์ความคิดเห็นของคุณ",
+                    "zh": "留下你的评论"
+                },
+                "sentcomment": {
+                    "en": "Sent Comment",
+                    "th": "ส่งความคิดเห็น",
+                    "zh": "评论"
+                }
+            }
+        }
+    },
+    "profile": {
+        "naveditprofile": {
+            "pageprofile": {
+                "en": "Profile picture",
+                "th": "รูปภาพโปรไฟล์",
+                "zh": "个人档案图片"
+            },
+            "pageborder": {
+                "en": "Profile edge",
+                "th": "กรอบโปรไฟล์",
+                "zh": "个人档案边界"
+            },
+            "pageshape": {
+                "en": "Profile shape",
+                "th": "รูปทรงโปรไฟล์",
+                "zh": "个人档案形状"
+            },
+            "pagebackground": {
+                "en": "Profile background",
+                "th": "พื้นหลังโปรไฟล์",
+                "zh": "个人档案背景"
+            }
+        },
+        "profilenav": {
+            "post": {
+                "en": "Post",
+                "th": "โพสต์",
+                "zh": "文章"
+            },
+            "about": {
+                "en": "About",
+                "th": "ข้อมูล",
+                "zh": "关于"
+            },
+            "friend": {
+                "en": "Friend",
+                "th": "เพื่อน",
+                "zh": "好友"
+            }
+        },
+        "edit": {
+            "searchprofile": {
+                "en": "Select profile",
+                "th": "ค้นหาโปรไฟล์"
+            },
+            "personInfo": {
+                "username": {
+                    "en": "Edit username",
+                    "th": "แก้ไขชื่อผู้ใช้"
+                },
+                "email": {
+                    "en": "Edit email",
+                    "th": "แก้ไขอีเมล"
+                },
+                "password": {
+                    "en": "Edit password",
+                    "th": "แก้ไขรหัสผ่าน"
+                },
+                "google": {
+                    "en": "Connect google",
+                    "th": "เชื่อมต่อ Google"
+                }
+            }
+        },
+        "requestfriend": {
+            "en": "Request as a friend",
+            "th": "คำขอเป็นเพื่อน",
+            "zh": "申请好友"
+        },
+        "friend": {
+            "en": "Friend",
+            "th": "เพื่อน",
+            "zh": "好友"
+        },
+        "addfriend": {
+            "en": "Add friend",
+            "th": "เพิ่มเพื่อน",
+            "zh": "添加好友"
+        },
+        "sendmessage": {
+            "en": "Send message",
+            "th": "ส่งข้อความ",
+            "zh": "私信"
+        },
+        "refuserequest": {
+            "en": "Refuse request",
+            "th": "ปฏิเสธคำขอ"
+        },
+        "getrequest": {
+            "en": "Get request",
+            "th": "ยอมรับคำขอ",
+            "zh": "获得申请"
+        },
+        "deletefriend": {
+            "en": "Delete friend",
+            "th": "ลบเพื่อน",
+            "zh": "删除好友"
+        },
+        "account": {
+            "management": {
+                "en": "Account Management",
+                "th": "การจัดการบัญชี",
+                "zh": "账号管理"
+            },
+            "related": {
+                "en": "Related accounts",
+                "th": "บัญชีที่เกี่ยวข้อง"
+            },
+            "delete": {
+                "en": "Delete Account",
+                "th": "ลบบัญชี",
+                "zh": "删除账号"
+            }
+        }
+    },
+    "chat": {
+        "nomessage": {
+            "en": "No message available",
+            "th": "ไม่มีข้อความ",
+            "zh": "无可用消息"
+        },
+        "morethen": {
+            "en": "More than 30 days",
+            "th": "มากกว่า 30 วัน",
+            "zh": "大于30天"
+        },
+        "message": {
+            "input-field": {
+                "en": "Type a message here...",
+                "th": "พิมพ์ข้อความที่นี่...",
+                "zh": "此处输入消息.."
+            }
+        }
+    },
+    "inventory": {
+        "item": {
+            "type": {
+                "en": "Type",
+                "th": "ประเภท",
+                "zh": "类型"
+            },
+            "price": {
+                "en": "Price",
+                "th": "ราคา",
+                "zh": "价格"
+            },
+            "status": {
+                "status": {
+                    "en": "Status",
+                    "th": "สถานะ",
+                    "zh": "状态"
+                },
+                "n": {
+                    "en": "Normal",
+                    "th": "ปกติ",
+                    "zh": "普通"
+                },
+                "r": {
+                    "en": "Rare",
+                    "th": "หายาก",
+                    "zh": "稀有"
+                }
+            }
+        }
+    },
+    "shop": {
+        "nav": {
+            "pagedaily": {
+                "en": "Daily",
+                "th": "รายวัน",
+                "zh": "日常"
+            },
+            "pagerandombox": {
+                "en": "Randombox",
+                "th": "กล่องสุ่ม",
+                "zh": "随机盒子"
+            },
+            "pageteakoin": {
+                "en": "Teakoin",
+                "th": "Teakoin",
+                "zh": "Teakoin"
+            }
+        },
+        "contentdaily": {
+            "textdaily": {
+                "en": "Daily Milkoin Bonus",
+                "th": "รับ Milkoin รายวัน",
+                "zh": "每日Milkoin奖励"
+            }
+        },
+        "contentrandombox": {
+            "typerandombox": {
+                "profile": {
+                    "en": "Profile",
+                    "th": "โปรไฟล์",
+                    "zh": "个人档案"
+                },
+                "background": {
+                    "en": "Background",
+                    "th": "พื้นหลัง",
+                    "zh": "背景"
+                }
+            },
+            "bannerrandombox": {
+                "orderbox1": {
+                    "en": "Order 1 box",
+                    "th": "สั่งซื้อ 1 กล่อง",
+                    "zh": "下单1个盒子"
+                },
+                "orderbox10": {
+                    "en": "Order 10 boxes",
+                    "th": "สั่งซื้อ 10 กล่อง",
+                    "zh": "下单10个盒子"
+                }
+            },
+            "history": {
+                "turn": {
+                    "en": "Turn",
+                    "th": "รอบ",
+                    "zh": "回合"
+                },
+                "nameitem": {
+                    "en": "Name item",
+                    "th": "ชื่อไอเท็ม",
+                    "zh": "Name item"
+                },
+                "typeitem": {
+                    "en": "Type item",
+                    "th": "ประเภทไอเท็ม",
+                    "zh": "Type item"
+                }
+            },
+            "btnskip": {
+                "en": "Skip",
+                "th": "ข้าม",
+                "zh": "跳过"
+            }
+        },
+        "contentteakoin": {
+            "currency": {
+                "en": "USD",
+                "th": "THB",
+                "zh": "",
+                "comment": "this is your currency"
+            },
+            "koin": [
+                {
+                    "free": 0,
+                    "normal": 100,
+                    "get": 100,
+                    "use": {
+                        "en": 0.29,
+                        "th": 10.00,
+                        "zh": 0
+                    }
+                },
+                {
+                    "free": 50,
+                    "normal": 350,
+                    "get": 400,
+                    "use": {
+                        "en": 1.00,
+                        "th": 35.00,
+                        "zh": 0
+                    }
+                },
+                {
+                    "free": 150,
+                    "normal": 700,
+                    "get": 850,
+                    "use": {
+                        "en": 2.00,
+                        "th": 70.00,
+                        "zh": 0
+                    }
+                },
+                {
+                    "free": 500,
+                    "normal": 1000,
+                    "get": 1500,
+                    "use": {
+                        "en": 2.85,
+                        "th": 100.00,
+                        "zh": 0
+                    }
+                },
+                {
+                    "free": 1500,
+                    "normal": 2000,
+                    "get": 3500,
+                    "use": {
+                        "en": 5.70,
+                        "th": 200.00,
+                        "zh": 0
+                    }
+                },
+                {
+                    "free": 5000,
+                    "normal": 5000,
+                    "get": 10000,
+                    "use": {
+                        "en": 14.25,
+                        "th": 500.00,
+                        "zh": 0
+                    }
+                }
+            ]
+        }
+    },
+    "setting": {
+        "content": {
+            "title": {
+                "language": {
+                    "en": "Language",
+                    "th": "ภาษา",
+                    "zh": "语言"
+                },
+                "menuPosition": {
+                    "en": "Menu position",
+                    "th": "ตำแหน่งเมนู",
+                    "zh": "菜单位置"
+                },
+                "animationBackground": {
+                    "en": "Animation background",
+                    "th": "พื้นหลังภาพเคลื่อนไหว",
+                    "zh": "动画背景"
+                },
+                "theme": {
+                    "en": "Theme",
+                    "th": "ธีม",
+                    "zh": "主题"
+                },
+                "redeemCode": {
+                    "en": "Redeem code",
+                    "th": "รหัสแลกรับ",
+                    "zh": "兑换"
+                },
+                "volume": {
+                    "en": "Volume",
+                    "th": "ระดับเสียง",
+                    "zh": ""
+                }
+            },
+            "menuPosition": [
+                {
+                    "en": "Left",
+                    "th": "ซ้าย",
+                    "zh": "左"
+                },
+                {
+                    "en": "Right",
+                    "th": "ขวา",
+                    "zh": "右"
+                }
+            ],
+            "animationBackground": [
+                {
+                    "en": "Off",
+                    "th": "ปิด",
+                    "zh": "关闭"
+                },
+                {
+                    "en": "On",
+                    "th": "เปิด",
+                    "zh": "打开"
+                }
+            ],
+            "theme": [
+                {
+                    "en": "Dark",
+                    "th": "มืด",
+                    "zh": "暗"
+                },
+                {
+                    "en": "Light",
+                    "th": "สว่าง",
+                    "zh": "亮"
+                },
+                {
+                    "en": "Dark White",
+                    "th": "มืด ขาว",
+                    "zh": "暗白"
+                },
+                {
+                    "en": "Light Black",
+                    "th": "สว่าง ดำ",
+                    "zh": "亮黑"
+                },
+                {
+                    "en": "Dark Blue",
+                    "th": "มืด ฟ้า",
+                    "zh": "深蓝"
+                },
+                {
+                    "en": "Light Blue",
+                    "th": "สว่าง ฟ้า",
+                    "zh": "浅蓝"
+                },
+                {
+                    "en": "Dark Red",
+                    "th": "มืด แดง",
+                    "zh": "深红"
+                },
+                {
+                    "en": "Light Red",
+                    "th": "สว่าง แดง",
+                    "zh": "浅红"
+                },
+                {
+                    "en": "Dark Green",
+                    "th": "มืด เขียว",
+                    "zh": "深绿"
+                },
+                {
+                    "en": "Light Green",
+                    "th": "สว่าง เขียว",
+                    "zh": "浅绿"
+                },
+                {
+                    "en": "Dark Yellow",
+                    "th": "มืด เหลือง",
+                    "zh": "深黄"
+                },
+                {
+                    "en": "Light Yellow",
+                    "th": "สว่าง เหลือง",
+                    "zh": "浅黄"
+                },
+                {
+                    "en": "Blue",
+                    "th": "ฟ้า",
+                    "zh": "蓝"
+                },
+                {
+                    "en": "Red",
+                    "th": "แดง",
+                    "zh": "红"
+                },
+                {
+                    "en": "Green",
+                    "th": "เขียว",
+                    "zh": "绿"
+                },
+                {
+                    "en": "Yellow",
+                    "th": "เหลือง",
+                    "zh": "黄"
+                }
+            ],
+            "redeemcode": {
+                "en": "Enter redeem code...",
+                "th": "กรอกรหัสแลกรับ...",
+                "zh": "输入兑换码.."
+            }
+        }
+    },
+    "swal": {
+        "success": {
+            "en": "Success",
+            "th": "สำเร็จ"
+        },
+        "error": {
+            "en": "Error",
+            "th": "เกิดข้อผิดพลาด",
+            "zh": "错误"
+        },
+        "warning": {
+            "en": "Warning",
+            "th": "คำเตือน",
+            "zh": "警告"
+        },
+        "errortext": {
+            "en": "Something went wrong!",
+            "th": "บางอย่างผิดพลาด!",
+            "zh": "发生某种错误!"
+        },
+        "copyuid": {
+            "en": "Copy Uid",
+            "th": "คัดลอก Uid แล้ว",
+            "zh": "复制Uid"
+        },
+        "friend": {
+            "addfriend": {
+                "en": "Friend request sent",
+                "th": "ส่งคำขอเป็นเพื่อนแล้ว",
+                "zh": "发送好友请求"
+            },
+            "refusefriend": {
+                "en": "Request denied",
+                "th": "ปฏิเสธคำขอแล้ว"
+            },
+            "getfriend": {
+                "en": "Friend request accepted",
+                "th": "รับคำขอเป็นเพื่อนแล้ว",
+                "zh": "接受好友请求"
+            },
+            "removefriend": {
+                "en": "Friend request has been deleted",
+                "th": "ลบคำขอเป็นเพื่อนแล้ว",
+                "zh": "好友请求已删除"
+            },
+            "deletefriend": {
+                "en": "Friend deleted",
+                "th": "ลบเพื่อนแล้ว",
+                "zh": "删除好友"
+            }
+        },
+        "login": {
+            "loginyet": {
+                "en": "You haven't logged in yet!",
+                "th": "คุณยังไม่ได้เข้าสู่ระบบ!",
+                "zh": "您还未登录!"
+            },
+            "usernamepasswordinvalid": {
+                "en": "Username or password is invalid!",
+                "th": "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง!",
+                "zh": "用户名或密码无效!"
+            },
+            "emailrepeated": {
+                "en": "This email is repeated!",
+                "th": "อีเมลนี้ถูกใช้ไปแล้ว!",
+                "zh": "此电子邮箱已存在!"
+            },
+            "otpnotcaorrect": {
+                "en": "OTP is not correct!",
+                "th": "OTP ไม่ถูกต้อง!",
+                "zh": "OTP不正确!"
+            },
+            "entername": {
+                "en": "Please enter your name!",
+                "th": "กรุณากรอกชื่อของคุณ!",
+                "zh": "请输入您的姓名!"
+            },
+            "enterusername": {
+                "en": "Please enter your username!",
+                "th": "กรุณากรอกชื่อผู้ใช้ของคุณ!",
+                "zh": "请输入您的用户名!"
+            },
+            "enterpassword": {
+                "en": "Please enter your password!",
+                "th": "กรุณากรอกรหัสผ่านของคุณ!",
+                "zh": "请输入您的密码!"
+            },
+            "enterpasswordconfirme": {
+                "en": "Please enter your password confirme!",
+                "th": "กรุณากรอกยืนยันรหัสผ่านของคุณ!",
+                "zh": "请再次输入您的密码!"
+            },
+            "usernamerepeated": {
+                "en": "This username is repeated!",
+                "th": "ชื่อผู้ใช้นี้ถูกใช้ไปแล้ว!",
+                "zh": "此用户名已存在!"
+            },
+            "password8char": {
+                "en": "Password must be at least 8 characters!",
+                "th": "รหัสผ่านต้องมีอักขระอย่างน้อย 8 ตัว!",
+                "zh": "密码必须至少8个字符!"
+            },
+            "passwordunreasonable": {
+                "en": "Password is unreasonable!",
+                "th": "รหัสผ่านไม่ตรงกัน!",
+                "zh": "无效密码!"
+            }
+        },
+        "dailyreceived": {
+            "en": "You have received the Chokoin!",
+            "th": "คุณได้รับ Chokoin แล้ว!",
+            "zh": "你获得了Chokoin!"
+        },
+        "chokoinnotenough": {
+            "en": "Your Chokoin is not enough.",
+            "th": "chokoin ของคุณไม่เพียงพอ",
+            "zh": "你的Chokoin不足"
+        },
+        "profile": {
+            "editname": {
+                "en": "Change name successfully",
+                "th": "เปลี่ยนชื่อสำเร็จ",
+                "zh": "变更姓名成功"
+            },
+            "editprofile": {
+                "en": "Profile has been edited",
+                "th": "แก้ไขโปรไฟล์เรียบร้อยแล้ว"
+            }
+        },
+        "setting": {
+            "redeem": {
+                "notfindcode": {
+                    "en": "Not't find this code",
+                    "th": "ไม่พบรหัสนี้"
+                },
+                "usedcode": {
+                    "en": "Already used this code",
+                    "th": "รหัสนี้ถูกใช้ไปแล้ว"
+                },
+                "entercode": {
+                    "en": [
+                        "Enter ",
+                        " code success"
+                    ],
+                    "th": [
+                        "ป้อนรหัส ",
+                        " สำเร็จ"
+                    ]
+                }
+            }
+        }
+    },
+    "error": {
+        "en": "Error text",
+        "th": "ข้อความเกิดข้อผิดพลาด",
+        "zh": "错误消息"
+    }
+}

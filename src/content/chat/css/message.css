@@ -1,0 +1,249 @@
+.srccontent.message header {
+    height: 70px;
+}
+
+.srccontent.message #heading {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.srccontent.message #heading a {
+    display: flex;
+    align-items: center;
+}
+
+.srccontent.message .btnBackMessage {
+    left: 1.5%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background: var(--themeT);
+}
+
+.srccontent.message .btnBackMessage path {
+    font-size: 15px;
+    color: var(--theme);
+}
+
+.srccontent.message .profileId {
+    display: inline;
+    color: var(--theme4);
+}
+
+.srccontent.message header .profileImg {
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.srccontent.message header span {
+    font-size: 2rem;
+}
+
+.showcase.message .footer,
+.showcase.message footer {
+    display: none;
+}
+
+/* =====================on=messageContent===================== */
+
+.srccontent.message :is(.messageContent)::-webkit-scrollbar {
+    width: 0;
+}
+
+.srccontent.message .content {
+    padding: 20px 40px;
+    height: calc(100vh - 140px);
+}
+
+.srccontent.message .messageContent {
+    height: 93%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.srccontent.message .messageContent .message .text {
+    padding: 8px 16px;
+    word-wrap: break-word;
+}
+
+.srccontent.message .messageContent .chatout {
+    display: grid;
+    justify-items: end;
+}
+
+.srccontent.message .chatout .detailes {
+    grid-area: 1 / 1;
+}
+
+.srccontent.message .chatout .detailes .text {
+    color: var(--themeT);
+    background: var(--theme1);
+    border-radius: 18px 0 18px 18px;
+}
+
+.srccontent.message .messageContent .chatin {
+    display: grid;
+    column-gap: 5px;
+    grid: 1.5rem auto 25px / 35px auto;
+}
+
+.srccontent.message .messageContent .chatin .profileImg {
+    grid-row: 2;
+    width: 35px;
+    height: 35px;
+}
+
+.srccontent.message .messageContent .chatin .name {
+    padding: 0;
+    grid-area: 1 / 2;
+}
+
+.srccontent.message .chatin .detailes {
+    grid-area: 2 / 2;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+
+.srccontent.message .chatin .detailes .text {
+    text-shadow: none;
+    display: inline-flex;
+    color: var(--theme1);
+    background: var(--themeT);
+    border-radius: 0 18px 18px 18px;
+}
+
+.srccontent.message .messageContent .date {
+    grid-area: 3 / 2;
+    font-size: 0.8rem;
+    color: var(--theme4);
+}
+
+.srccontent.message .chatout .date {
+    grid-area: 2 / 1;
+}
+
+/* =====================off=messageContent===================== */
+/* =====================on=messagefunction===================== */
+
+.srccontent.message .detailes .function {
+    overflow: hidden;
+}
+
+.srccontent.message .detailes .function .messageCode {
+    color: white;
+    display: grid;
+    padding: 15px;
+    overflow: auto;
+    font-size: 12px;
+    border-radius: 10px;
+    background: black;
+}
+
+.srccontent.message .detailes .function .messageCode .code.comment {
+    color: seagreen;
+}
+
+.srccontent.message .detailes .function .messageCode .code.array {
+    color: goldenrod;
+    padding-left: calc(var(--a) * 16px);
+}
+
+.srccontent.message .detailes .function .messageCode .code.keyword {
+    color: cyan;
+    padding-left: 8px;
+}
+
+.srccontent.message .detailes .function .messageCode .code.variable {
+    color: magenta;
+}
+
+.srccontent.message .detailes .function .messageCode .code.title {
+    color: red;
+}
+
+/* =====================off=messagefunction===================== */
+/* =====================on=typingmessage===================== */
+
+.srccontent.message .typing-area {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.srccontent.message .typing-area input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    padding: 0 13px;
+    font-size: 16px;
+    color: var(--theme);
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--themeT);
+}
+
+.srccontent.message .typing-area button {
+    width: 55px;
+    height: 45px;
+    opacity: 0.6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
+    color: var(--themeT);
+    pointer-events: none;
+    background: var(--theme1);
+    transition: all 0.3s ease;
+    border-radius: 0 5px 5px 0;
+}
+
+.srccontent.message .typing-area button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* =====================off=typingmessage===================== */
+/* =====================on=listmessage===================== */
+
+.srccontent.message .typing-area .listmessage {
+    gap: 2px;
+    width: 100%;
+    bottom: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+}
+
+.srccontent.message .typing-area.active .listmessage {
+    display: flex;
+}
+
+.srccontent.message .typing-area .listmessage .listmessagebtn {
+    width: 100%;
+    display: flex;
+    padding: 0 13px;
+    border-radius: 8px;
+    align-items: center;
+    pointer-events: all;
+}
+
+/* =====================off=listmessage===================== */
+
+@media screen and (max-width: 880px) {
+    .srccontent.message .messageContent {
+        height: calc(100vh - 290px);
+    }
+
+    .srccontent.message .content {
+        height: calc(100vh - 205px);
+    }
+}

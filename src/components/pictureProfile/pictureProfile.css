@@ -1,0 +1,85 @@
+@keyframes pictureprofiles {
+
+    0%,
+    30% {
+        opacity: 0;
+        left: -100%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70%,
+    100% {
+        opacity: 0;
+        left: 200%;
+    }
+}
+
+.divProfile {
+    margin: auto;
+    display: inline-block;
+
+    .pictureprofile,
+    .pictureprofiles {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        &.bordern {
+            border: none;
+            box-shadow: none;
+        }
+
+        &.shape0 {
+            border-radius: 50%;
+        }
+
+        &.shape4 {
+            border-radius: 0%;
+        }
+
+        &.shape3 {
+            clip-path: url('#svgshape3');
+        }
+
+        &.shapes {
+            clip-path: url('#svgshapes');
+        }
+    }
+
+    .pictureprofile {
+        &.profilen {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/img/profile/user-default.svg');
+        }
+    }
+
+    .pictureprofiles {
+        &::before {
+            content: "";
+            top: -50%;
+            width: 2px;
+            height: 200%;
+            position: absolute;
+            transform: rotate(45deg);
+            animation: pictureprofiles 3s infinite;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        &.profilecho {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/img/profile/chocoicon.png');
+        }
+    }
+}

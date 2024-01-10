@@ -1,0 +1,86 @@
+.srccontent.applications .linktoinfoapp,
+.srccontent.application .content.infoapp {
+    .ratingapp {
+
+        & span {
+            display: flex;
+            position: relative;
+            font-size: calc(1.5rem * var(--responsive2));
+        }
+
+        & .starback {
+            color: var(--themeAT);
+        }
+
+        & .starface {
+            top: 0;
+            display: flex;
+            overflow: hidden;
+            position: absolute;
+            align-items: center;
+            color: var(--themeT);
+            height: calc(2rem * var(--responsive2));
+        }
+    }
+
+    /* ======================on-type======================= */
+
+    & .typeapp {
+
+        & .apptype {
+            color: #fff;
+            overflow: hidden;
+            border-radius: 4px;
+            align-items: center;
+            display: inline-flex;
+            height: calc(1.2rem * var(--responsive));
+            padding: calc(2.5px * var(--responsive2));
+            border-right: 0.1rem solid var(--themeAT);
+            border-bottom: 0.1rem solid var(--themeAT);
+            font-size: calc(0.6rem * var(--responsive2));
+
+            &.test {
+                background: red;
+            }
+
+            &.Learn {
+                color: #000;
+                background: greenyellow;
+            }
+
+            &.Get.koin {
+                color: #000;
+                background: yellow;
+            }
+
+            &.Game {
+                background: cyan;
+            }
+
+            &.Read {
+                color: #000;
+                background: white;
+            }
+
+            &.Card {
+                color: red;
+                background: white;
+            }
+
+            &.Bot {
+                color: aqua;
+                background: blue;
+            }
+
+            &.Online {
+                background: #0d0;
+            }
+
+            &.Multiplayer {
+                background: linear-gradient(to right, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, indigo 100%);
+            }
+        }
+    }
+
+    /* ======================off-type======================= */
+}

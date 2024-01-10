@@ -1,0 +1,512 @@
+/* ===================on-1000======================= */
+
+@media screen and (max-width: 1000px) {
+    .bordermax {
+        margin: 60px auto 0 auto;
+    }
+
+    header {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        margin-bottom: 0.5%;
+    }
+
+    .saibar {
+        width: 19.5%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .content2 {
+        width: 79.5%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .navigation ul li button .navtext {
+        font-size: 1em;
+    }
+
+    .navigation ul li button .navicon {
+        display: none;
+    }
+
+    .profileNav {
+        width: 100%;
+    }
+}
+
+/* ===================off-1000======================= */
+/* ===================on-880======================= */
+
+@media screen and (max-width: 880px) {
+    :root {
+        --responsive: 0.95;
+        --responsive2: 0.9;
+    }
+
+    .uid {
+        bottom: 75px;
+    }
+
+    .uid.nores {
+        bottom: 10px;
+    }
+
+    footer {
+        bottom: 60px;
+    }
+
+    .footer {
+        height: 160px;
+    }
+
+    .footerBtnUp.active {
+        bottom: 100px;
+    }
+
+    .showcase.openmenu nav .navigation {
+        bottom: 0;
+    }
+
+    .bordermax {
+        margin: 60px auto 70px auto;
+    }
+
+    .navigation {
+        position: fixed;
+        background: var(--theme);
+        justify-content: center;
+        border-top: var(--themeZB1) solid var(--themeB);
+    }
+
+    .navigation ul {
+        width: 1000px;
+    }
+
+    .navigation ul li button {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navigation ul li button:hover::after {
+        display: none;
+    }
+
+    .navigation ul li button .navicon {
+        display: block;
+        color: var(--themeT);
+    }
+
+    .navigation ul li button .navtext {
+        width: 5rem;
+        opacity: 1;
+        position: absolute;
+        font-size: 0.75em;
+        color: var(--themeT);
+        transform: translateY(20px);
+    }
+
+    .navigation ul li:hover button .navicon {
+        transform: translateY(5px);
+    }
+
+    .navigation ul li:hover button .navtext {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    .navigation ul li:nth-child(1):hover~.indicator {
+        transform: translateX(calc(70px * 0));
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-child(2):hover~.indicator {
+        transform: translateX(calc(70px * 1));
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-child(3):hover~.indicator {
+        transform: translateX(calc(70px * 2));
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-child(4):hover~.indicator {
+        transform: translateX(calc(70px * 3));
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-child(5):hover~.indicator {
+        transform: translateX(calc(70px * 4));
+        opacity: 0;
+    }
+
+    .navigation ul li:nth-child(6):hover~.indicator {
+        transform: translateX(calc(70px * 5));
+        opacity: 0;
+    }
+
+    .navmenu ul {
+        width: auto;
+    }
+
+    .navmenu ul li button {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .srccontent.message .messageContent {
+        height: calc(100vh - 290px);
+    }
+
+    .srccontent.message .content {
+        height: calc(100vh - 205px);
+    }
+
+    .bordermax .wallet {
+        width: 180px;
+        height: 40px;
+        bottom: 70px;
+    }
+
+    .bordermax .wallet img {
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+    }
+
+    .bordermax .wallet span {
+        font-size: 15px;
+    }
+
+    .srccontent.profile .editprofile {
+        width: 100%;
+    }
+
+    .srccontent.profile .naveditprofile .page {
+        font-size: 1rem;
+    }
+
+    .srccontent.profile .editprofile .formchoose .choose {
+        width: 80px;
+        height: 80px;
+        margin: 17.5px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        top: 190px;
+        left: 110px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        font-size: 0.75rem;
+    }
+
+    .srccontent.shop section.showrandombox .showboxs {
+        grid: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ===================off-880======================= */
+/* ===================on-780======================= */
+
+@media screen and (max-width: 780px) {
+    :root {
+        --responsive: 0.9;
+        --responsive2: 0.8;
+    }
+
+    .srccontent.profile .editprofile .formchoose .choose {
+        width: 60px;
+        height: 60px;
+        margin: 15px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        top: 170px;
+        left: 90px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile i {
+        font-size: 0.5rem;
+    }
+
+    .srccontent.application .linktoinfoapp .typeapp {
+        grid: 1fr 1fr 1fr / auto auto auto auto;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox {
+        left: 1%;
+        width: 30px;
+        height: 400px;
+        position: absolute;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox .btnnavrandombox {
+        display: flex;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox .typerandombox {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox.active {
+        width: 230px;
+        padding-right: 40px;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox.active .btnnavrandombox {
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox.active .typerandombox {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox {
+        height: 400px;
+        margin-left: 40px;
+    }
+}
+
+/* ===================off-780======================= */
+/* ===================on-680======================= */
+
+@media screen and (max-width: 680px) {
+    :root {
+        --responsive: 0.85;
+        --responsive2: 0.7;
+    }
+
+    .content2 {
+        width: 100%;
+        margin-bottom: 0.5%;
+    }
+
+    .saibar {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .saibar .profileSaibars {
+        font-size: 1.4rem;
+    }
+
+    .saibar .profileSaibar {
+        font-size: 1.2rem;
+    }
+
+    ul.profileName {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .contentrandombox a {
+        width: 150px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    .navshop .page {
+        padding: 10px;
+    }
+
+    .srccontent.application .linktoinfoapp .typeapp {
+        grid: 1fr 1fr 1fr / auto auto auto;
+    }
+
+    .srccontent.shop section.showrandombox .showboxs {
+        grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox {
+        height: 700px;
+        grid: 500px 100px 100px / auto;
+    }
+
+    .srccontent.shop .contentrandombox .navrandombox {
+        height: 700px;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox .picturebanner {
+        grid-column: 1;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox .info {
+        justify-content: normal;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox .orderbox {
+        grid-column: 1;
+        grid: auto / 1fr 1fr;
+        justify-content: center;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox button {
+        width: auto;
+    }
+
+    .srccontent.shop .contentrandombox .bannerrandombox button:is(.orderbox1, .orderbox10) {
+        width: 100%;
+    }
+}
+
+/* ===================off-680======================= */
+/* ===================on-580======================= */
+
+@media screen and (max-width: 580px) {
+    :root {
+        --responsive: 0.8;
+        --responsive2: 0.6;
+    }
+
+    #icon.active {
+        display: none;
+    }
+
+    .content2 {
+        padding: 30px 15px;
+    }
+
+    .formProfile {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .profilelogout {
+        width: 125px;
+        font-size: 1.25rem;
+    }
+
+    ul.profileName {
+        display: flex;
+        margin-left: 0;
+        font-size: 1.5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profileNav button {
+        font-size: 0.8rem;
+        padding: 5px 15px;
+    }
+
+    .contentrandombox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .srccontent.profile .formProfile {
+        gap: 0;
+        justify-items: center;
+        justify-content: center;
+        grid: calc(160px * var(--responsive)) auto auto / auto;
+    }
+
+    .srccontent.profile .profileBtn {
+        position: relative;
+    }
+}
+
+/* ===================off-580======================= */
+/* ===================on-480======================= */
+
+@media screen and (max-width: 480px) {
+    :root {
+        --responsive: 0.75;
+        --responsive2: 0.5;
+    }
+
+    .showcase.openmenu nav .navProfile {
+        transition: 0s;
+        top: 0;
+    }
+
+    .showcase.openmenu nav .navigation .navProfile {
+        top: 0;
+    }
+
+    .navProfile {
+        right: 0;
+        margin: 0 -10px;
+        position: relative;
+    }
+
+    .navProfile p {
+        display: none;
+    }
+
+    .showcase nav .navmenu {
+        top: auto;
+        bottom: calc(100% + 30px);
+    }
+
+    .showcase nav .navmenu::before {
+        top: auto;
+        bottom: -8px;
+    }
+
+    .bordermax .wallet {
+        bottom: 180px;
+        flex-direction: column;
+    }
+
+    .srccontent.shop section.showrandombox .showboxs {
+        grid: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    }
+}
+
+/* ===================off-480======================= */
+/* ===================on-440======================= */
+
+@media screen and (max-width: 440px) {
+    header {
+        height: 5rem;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .chatList a .status-dot {
+        right: 30px;
+    }
+}
+
+/* ===================off-440======================= */
+/* ===================on-380======================= */
+
+@media screen and (max-width: 380px) {
+    :root {
+        --responsive: 0.7;
+        --responsive2: 0.4;
+    }
+
+    .srccontent.chat .chatList button .status-dot p {
+        display: none;
+    }
+}
+
+/* ===================off-380======================= */
+/* ===================on-280======================= */
+
+@media screen and (max-width: 280px) {
+    #icon {
+        display: none;
+    }
+}
+
+/* ===================off-280======================= */

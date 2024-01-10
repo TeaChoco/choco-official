@@ -1,0 +1,552 @@
+/* ============================on-set=================================== */
+
+.showcaseapp.app1 {
+    overflow: hidden;
+
+    & section.showcase {
+        left: -100%;
+        transition: 0.3s;
+        padding-top: 60px;
+        position: absolute;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    & .box {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-wrap: wrap;
+        position: absolute;
+        justify-content: space-evenly;
+        margin-top: calc(2rem * var(--responsive));
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    /* ============================off-set=================================== */
+    /* ============================on-nav=================================== */
+
+    & nav {
+        justify-content: space-between;
+
+        & .btn {
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            font-size: 25px;
+            text-shadow: none;
+            color: var(--theme);
+            background: var(--themeT);
+
+            &:hover {
+                color: var(--themeT);
+                background: var(--theme1);
+
+                & path {
+                    color: var(--themeT);
+                }
+            }
+
+            &.start,
+            &.back {
+                display: none;
+            }
+
+            &.btnendgame {
+                width: 120px;
+                display: flex;
+                font-size: 1rem;
+                justify-content: space-evenly;
+            }
+
+            & path {
+                color: var(--theme);
+            }
+        }
+
+        & .center {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+
+        & .btnnav {
+            display: none;
+        }
+
+        & .innav {
+            width: 100%;
+            display: flex;
+            transition: 0.5s;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            transform: translateY(-500px);
+
+            & .divnav {
+                display: flex;
+            }
+
+            & .divsetread {
+                margin: 5px;
+                padding: 5px;
+                display: flex;
+                border-radius: 10px;
+                background-color: var(--theme1);
+
+                & button.setread {
+                    height: 100%;
+                    color: var(--themeT);
+                    background-color: transparent;
+                }
+
+                &#hiragana button.setread.hiragana,
+                &#katakana button.setread.katakana,
+                &#unvoiced button.setread.unvoiced,
+                &#voiced button.setread.voiced,
+                &#bendsound button.setread.bendsound {
+                    color: var(--theme);
+                    background-color: var(--themeT);
+                }
+            }
+        }
+
+        &#read,
+        &#test,
+        &#testing {
+
+            & .btn.start,
+            & .btn.back,
+            & .btn.back {
+                display: flex;
+            }
+
+            & .innav.read,
+            & .innav.test,
+            & .innav.testing {
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    /* ============================off-nav=================================== */
+    /* ============================on-mainsetting=================================== */
+
+    & .backmainsetting {
+        z-index: 1000;
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        background-color: #00000080;
+    }
+
+    & .mainsetting {
+        top: 50%;
+        left: 50%;
+        height: auto;
+        z-index: 2000;
+        padding: 2rem;
+        display: none;
+        position: fixed;
+        user-select: none;
+        align-items: center;
+        border-radius: 10px;
+        color: var(--themeT);
+        flex-direction: column;
+        background-color: var(--theme2);
+        transform: translate(-50%, -50%);
+        width: calc(45rem * var(--responsive2));
+        font-size: calc(2rem * var(--responsive));
+        border: var(--themeT) var(--themeZB) solid;
+
+        & .title {
+            font-size: calc(3rem * var(--responsive));
+        }
+
+        & .btn {
+            width: 60%;
+            background-color: var(--theme3);
+
+            &:hover {
+                background-color: var(--themeT);
+            }
+        }
+
+        & .informsetting {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--themeB);
+            margin-bottom: calc(0.5rem * var(--responsive));
+            ;
+        }
+
+        & .formsetting label {
+            display: inline-flex;
+        }
+
+        & input.range[type="range"] {
+            width: 20vw;
+            height: 10px;
+            border: none;
+            outline: none;
+            border-style: none;
+            border-radius: 5px;
+            background: var(--themeT);
+        }
+    }
+
+    & .mainsetting.active,
+    & .backmainsetting.active {
+        display: flex;
+    }
+
+    /* ============================off-mainsetting=================================== */
+    /* ============================on-read=================================== */
+
+    & .box.read {
+        gap: 2vw 0;
+        width: 100%;
+        height: auto;
+        display: grid;
+        margin-top: 1vw;
+        position: absolute;
+        justify-items: center;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(5, 1fr);
+
+        & .boxtext {
+            width: 90%;
+            height: 18vw;
+            position: relative;
+            align-items: center;
+            color: var(--themeT);
+            display: inline-flex;
+            flex-direction: column;
+            background-color: var(--theme1);
+            border: var(--themeB) var(--themeZB) solid;
+
+            &:hover {
+                background-color: var(--theme3);
+            }
+
+            & .japantext {
+                font-size: 8vw;
+                user-select: none;
+            }
+
+            & .readtext {
+                bottom: 0;
+                font-size: 6vw;
+                user-select: none;
+                position: absolute;
+            }
+        }
+
+        &#bendsound {
+            grid-template-columns: repeat(3, 1fr);
+
+            & .boxtext {
+                width: 95%;
+            }
+        }
+    }
+
+    /* ============================off-read=================================== */
+    /*~ ============================on-test=================================== */
+
+    & .showcase.test {
+        display: flex;
+
+        & .divbtn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & .box {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            &.showscoreendgame {
+                top: 50%;
+                left: 50%;
+                z-index: 100;
+                height: auto;
+                display: none;
+                margin-top: 0;
+                position: fixed;
+                user-select: none;
+                border-radius: 10px;
+                justify-content: space-around;
+                background-color: var(--theme2);
+                transform: translate(-50%, -50%);
+                gap: calc(1rem * var(--responsive2));
+                width: calc(40rem * var(--responsive2));
+                padding: calc(2rem * var(--responsive2));
+                grid-template-rows: repeat(6, 3rem) 4rem;
+                border: var(--themeT) var(--themeZB) solid;
+                grid-template-columns: calc(36rem * var(--responsive2));
+
+                &::before {
+                    content: "";
+                    z-index: -1;
+                    left: -50vw;
+                    width: 200vw;
+                    height: 100vh;
+                    position: fixed;
+                    background-color: #00000080;
+                }
+
+                &.active {
+                    display: grid;
+                }
+            }
+
+            &.setting .formsetting {
+                width: 80vw;
+                display: flex;
+                align-items: center;
+                color: var(--themeT);
+                flex-direction: column;
+                font-size: calc(2rem * var(--responsive));
+                margin-bottom: calc(5rem * var(--responsive));
+
+                & label {
+                    display: inline-flex;
+                }
+
+                & .informsetting {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid var(--themeB);
+                    margin-bottom: calc(0.5rem * var(--responsive));
+
+                    & .inputsetting.mode {
+                        display: flex;
+                        background-color: var(--theme1);
+                        border-radius: calc(10px * var(--responsive));
+
+                        & .btn {
+                            height: auto;
+                            box-shadow: none;
+                            color: var(--themeAT);
+                            background-color: transparent;
+                            width: calc(8rem * var(--responsive));
+                            padding: calc(10px * var(--responsive));
+                            font-size: calc(1rem * var(--responsive));
+
+                            &:hover {
+                                color: var(--themeT);
+                            }
+                        }
+
+                        &#japan-my .btn.japan-my,
+                        &#my-japan .btn.my-japan,
+                        &#sound .btn.sound {
+                            color: var(--theme);
+                            background-color: var(--themeT);
+                        }
+                    }
+
+                    & .labeltype .hiragana,
+                    & .labeltype.checked .katakana {
+                        color: var(--themeT);
+                    }
+
+                    & .labeltype.checked .hiragana,
+                    & .labeltype .katakana {
+                        color: var(--theme2);
+                    }
+                }
+            }
+
+            &.setting input.range[type="range"] {
+                width: 20vw;
+                height: 10px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                background: var(--themeT);
+            }
+
+            &.setting input.checkbox.inputsetting[type="checkbox"] {
+                outline: none;
+                appearance: none;
+                transition: 0.5s;
+                position: relative;
+                border-style: none;
+                display: inline-flex;
+                background: var(--theme1);
+                width: calc(80px * var(--responsive));
+                height: calc(40px * var(--responsive));
+                border-radius: calc(20px * var(--responsive));
+                box-shadow: inset 0 0 calc(5px * var(--responsive)) var(--themeS);
+            }
+
+            &.setting input.checkbox.inputsetting:checked[type="checkbox"] {
+                background-color: var(--themeT);
+            }
+
+            &.setting input.checkbox.inputsetting[type="checkbox"]::before {
+                content: '';
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+                border-radius: 50%;
+                position: absolute;
+                transform: scale(1.1);
+                background-color: var(--themeT);
+                width: calc(40px * var(--responsive));
+                height: calc(40px * var(--responsive));
+                box-shadow: inset 0 0 calc(5px * var(--responsive)) var(--themeS);
+            }
+
+            &.setting input.checkbox.inputsetting:checked[type="checkbox"]::before {
+                background-color: var(--theme4);
+                left: calc(40px * var(--responsive));
+            }
+
+            &.gameplay.active {
+                height: 80%;
+                display: grid;
+                justify-items: center;
+                grid-template-columns: 80%;
+                margin-top: calc(2rem * var(--responsive));
+            }
+
+            &.gameplay .timebar {
+                left: 0;
+                top: 60px;
+                width: 100%;
+                height: 2vh;
+                position: fixed;
+                background-color: var(--theme1);
+            }
+
+            &.gameplay .timeline {
+                height: 2vh;
+                position: absolute;
+                background-color: var(--themeB);
+            }
+
+            &.gameplay .time {
+                top: 80px;
+                font-size: 2rem;
+                position: absolute;
+                color: var(--themeT);
+            }
+
+            & .textscore {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            & .textscore .score {
+                color: var(--themeT);
+                font-size: calc(2rem * var(--responsive));
+            }
+
+            & .textscore .score.correctPercentage {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: calc(3rem * var(--responsive));
+            }
+        }
+
+        & :is(.btn, .showtext, .reply) {
+            padding: 0;
+            display: flex;
+            transition: 0s;
+            position: relative;
+            align-items: center;
+            color: var(--themeT);
+            justify-content: center;
+            background-color: var(--theme3);
+            width: calc(10rem * var(--responsive));
+            height: calc(4rem * var(--responsive));
+            border: var(--themeB) var(--themeZB) solid;
+            font-size: calc(2rem * var(--responsive));
+            border-radius: calc(10px * var(--responsive));
+        }
+
+
+        & :is(.btn, .reply):hover {
+            color: var(--theme);
+            background-color: var(--themeT);
+        }
+
+        & .showtext {
+            user-select: none;
+            background-color: var(--theme1);
+            width: calc(20rem * var(--responsive));
+            height: calc(10rem * var(--responsive));
+            font-size: calc(8rem * var(--responsive));
+        }
+
+        & .reply {
+            padding: 0;
+            height: 100%;
+            width: calc(15rem * var(--responsive2));
+            font-size: calc(3rem * var(--responsive2));
+        }
+
+        & .reply.answered {
+            pointer-events: none;
+        }
+
+        & .reply i {
+            right: 1rem;
+            display: none;
+            position: absolute;
+        }
+
+        & .reply.correct i.fa-check {
+            color: #0f0;
+            display: flex;
+        }
+
+        & .reply.incorrect i.fa-xmark {
+            color: #f00;
+            display: flex;
+        }
+
+        & .boxreply {
+            gap: 1rem;
+            margin: 1rem;
+            display: grid;
+            justify-items: center;
+            grid-template-rows: repeat(4, calc(5rem * var(--responsive2)));
+        }
+
+        & .boxreply:is(#have4, #have5, #have6, #have7, #have8) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        & .boxreply:is(#have5, #have7) .reply:last-child {
+            grid-column: 1 / 3;
+        }
+
+        & .boxreply#have9 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* ============================off-test=================================== */
+}

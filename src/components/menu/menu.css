@@ -1,0 +1,180 @@
+/* ======================on-menu========================= */
+
+.menu {
+    left: -300px;
+    border-right: var(--themeZB1) solid var(--themeB);
+}
+
+.showcase.openmenu .menu {
+    left: 0;
+}
+
+.menu {
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    z-index: 2000;
+    position: fixed;
+    overflow-y: auto;
+    transition: 0.5s;
+    user-select: none;
+    background: inherit;
+    background-image: linear-gradient(75deg, var(--themeA3), var(--themeA));
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    & .textMenu {
+        font-size: 56px;
+        user-select: none;
+        position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+        color: var(--themeT);
+    }
+
+    & ul {
+        opacity: 1;
+        position: relative;
+        transform: skewY(10deg);
+
+        & li {
+            content: attr(data-text);
+            width: 150px;
+            height: 60px;
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            transition: 0.5s;
+            list-style: none;
+            position: relative;
+            align-items: center;
+            color: var(--themeT);
+            background: var(--clr);
+            justify-content: center;
+            z-index: calc(1* var(--i));
+            text-shadow: 2px 2px 2px var(--theme);
+
+            &:hover {
+                background: var(--theme2);
+                transform: translateX(50px);
+            }
+
+            & a {
+                z-index: 5000;
+                left: 0px;
+                top: -40px;
+                width: 190px;
+                height: 100px;
+                display: flex;
+                transition: 0.5s;
+                user-select: none;
+                position: absolute;
+                align-items: center;
+                color: var(--themeT);
+                text-decoration: none;
+                letter-spacing: 0.05em;
+
+                & p {
+                    user-select: none;
+                    padding: 40px 0 0 15px;
+                    text-shadow: 2px -2px 2px var(--theme);
+                }
+            }
+
+            &::before {
+                content: '';
+                top: 0;
+                right: -40px;
+                width: 40px;
+                height: 100%;
+                transition: 0.5s;
+                position: absolute;
+                transform-origin: left;
+                background: var(--clr);
+                filter: brightness(0.7);
+                transform: skewY(-45deg);
+            }
+
+            &::after {
+                left: 0;
+                top: -40px;
+                width: 100%;
+                height: 40px;
+                padding: 15px;
+                display: flex;
+                transition: 0.5s;
+                position: absolute;
+                align-items: center;
+                color: var(--themeT);
+                box-sizing: border-box;
+                background: var(--clr);
+                filter: brightness(0.9);
+                content: attr(data-text);
+                transform-origin: bottom;
+                transform: skewX(-45deg);
+            }
+
+            & svg {
+                top: -5px;
+                width: 30px;
+                right: -35px;
+                height: 100%;
+                opacity: 0.5;
+                display: flex;
+                transition: 0.5s;
+                font-size: 1.25em;
+                position: absolute;
+                align-items: center;
+                color: var(--themeT);
+                transform-origin: left;
+                filter: brightness(0.7);
+                transform: skewY(-45deg);
+                justify-content: center;
+            }
+
+            &:hover {
+                & a {
+                    color: var(--themeT);
+                }
+
+                &::before {
+                    filter: brightness(0.7);
+                    background: var(--theme2);
+                }
+
+                &::after {
+                    color: var(--themeT);
+                    filter: brightness(0.9);
+                    background: var(--theme2);
+                }
+
+                & svg {
+                    opacity: 1;
+                    color: var(--themeT);
+                }
+            }
+        }
+    }
+}
+
+.showcase .cancelMenu {
+    z-index: 1500;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: 0.3s;
+    pointer-events: none;
+    background-color: #000;
+}
+
+.showcase.openmenu .cancelMenu {
+    opacity: 0.5;
+    pointer-events: all;
+}
+
+/* ======================off-menu========================= */

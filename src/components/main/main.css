@@ -1,0 +1,123 @@
+/* =====================on-srccontent============================ */
+
+.showcase .srccontent {
+    height: auto;
+    transition: 0.3s;
+    overflow: initial;
+}
+
+/* =====================off-srccontent============================ */
+/* =====================on-content============================ */
+
+.bordermax {
+    max-width: 1000px;
+    display: flow-root;
+    margin: 55px auto 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .bordermax {
+        margin: 60px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .bordermax {
+        margin: 60px auto 70px auto;
+    }
+}
+
+.content {
+    width: 99%;
+    margin: 0.5%;
+    height: auto;
+    padding: 40px 5%;
+    position: relative;
+    border-radius: 20px;
+    color: var(--themeT);
+    background-color: var(--themeA3);
+    text-shadow: 2px 2px 4px var(--themeS);
+    box-shadow: 1px 1px 4px 1px var(--themeS);
+    border: var(--themeZB) solid var(--themeB);
+}
+
+.saibar {
+    float: left;
+    width: 24%;
+    margin: 0.5%;
+    height: auto;
+    overflow: hidden;
+    padding: 30px 2%;
+    border-radius: 20px;
+    align-items: center;
+    color: var(--themeT);
+    justify-content: center;
+    background-color: var(--themeA3);
+    text-shadow: 2px 2px 4px var(--themeS);
+    box-shadow: 1px 1px 4px 1px var(--themeS);
+    border: var(--themeZB) solid var(--themeB);
+}
+
+.content2 {
+    width: 74%;
+    margin: 0.5%;
+    height: auto;
+    float: right;
+    overflow: hidden;
+    padding: 40px 5%;
+    border-radius: 20px;
+    color: var(--themeT);
+    background-color: var(--themeA3);
+    text-shadow: 2px 2px 4px var(--themeS);
+    box-shadow: 1px 1px 4px 1px var(--themeS);
+    border: var(--themeZB) solid var(--themeB);
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        margin-bottom: 0.5%;
+    }
+
+    .saibar {
+        width: 19.5%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .content2 {
+        width: 79.5%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .content2 {
+        width: 100%;
+        margin-bottom: 0.5%;
+    }
+
+    .saibar {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .saibar .profileSaibars {
+        font-size: 1.4rem;
+    }
+
+    .saibar .profileSaibar {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content2 {
+        padding: 30px 15px;
+    }
+}
+
+/* =====================off-content============================ */

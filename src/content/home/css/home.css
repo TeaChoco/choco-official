@@ -1,0 +1,23 @@
+/* canvas {
+    display: block;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.8);
+} */
+
+.srccontent.home .contenttitle {
+    height: 60vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.srccontent.home img.imgchocowebicon {
+    width: 60vw;
+}
+
+.srccontent.home .textwelcome {
+    font-size: 4vw;
+    text-align: center;
+    color: var(--themeT);
+}

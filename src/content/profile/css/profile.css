@@ -1,0 +1,854 @@
+/* -page/profile/css/profile.css */
+.srccontent.profile {
+    & .unknow {
+        display: inline;
+        color: var(--theme4);
+    }
+
+    & .profiles::before {
+        width: 10px;
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.8);
+    }
+
+    /* ===================on=profile====================*/
+
+    & .search {
+        width: 80%;
+        z-index: 10;
+        position: relative;
+        margin: 0 10% 20px 10%;
+    }
+
+    & .searchlist {
+        top: 50px;
+        left: 0px;
+        width: 92%;
+        display: none;
+        overflow-y: auto;
+        max-height: 200px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--themeA3);
+        box-shadow: 2px 1px 4px 1px var(--themeS);
+        border: var(--themeZB) solid var(--themeB);
+
+        &.active {
+            display: flex;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        & .searchitem {
+            margin-bottom: 2px;
+            background-color: var(--themeA2);
+            padding: calc(2px * var(--responsive)) calc(6px * var(--responsive));
+
+            &:hover {
+                background-color: var(--themeA1);
+            }
+
+            & .left {
+                display: grid;
+                grid: auto / calc(60px * var(--responsive)) auto;
+            }
+
+            & .profileImg {
+                width: calc(50px * var(--responsive));
+                margin: calc(5px * var(--responsive));
+                height: calc(50px * var(--responsive));
+            }
+
+            & .datailes {
+                display: flex;
+                align-items: center;
+
+                & span {
+                    color: var(--themeT);
+                    font-size: calc(1.5rem * var(--responsive));
+                }
+
+                & p {
+                    color: var(--theme4);
+                }
+            }
+
+            & .right {
+                font-size: calc(1rem * var(--responsive));
+                margin-right: calc(1rem * var(--responsive));
+            }
+        }
+    }
+
+    & .profileBtnBack {
+        position: absolute;
+        color: var(--themeT);
+        left: calc(-45px * var(--responsive));
+        ;
+        padding: calc(15px * var(--responsive));
+        ;
+    }
+
+    & .profileContent {
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    & .formProfile {
+        gap: 20px;
+        display: grid;
+        position: relative;
+        align-items: center;
+        grid: auto / calc(160px * var(--responsive)) auto calc(300px * var(--responsive));
+    }
+
+    & .showprofile {
+        object-fit: cover;
+        position: relative;
+        display: inline-block;
+        width: calc(160px * var(--responsive));
+        height: calc(160px * var(--responsive));
+
+        & .profileImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    & .profileName {
+        display: flex;
+        list-style: none;
+        color: var(--themeT);
+        flex-direction: column;
+        font-size: calc(2rem * var(--responsive));
+        line-height: calc(2.5rem * var(--responsive));
+
+        & li {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        & .profileFriend {
+            font-size: 1.2rem;
+            color: var(--theme4);
+        }
+
+        & .editname {
+            margin: 10px;
+            position: relative;
+
+            & .inputname {
+                width: 100%;
+                display: none;
+                font-size: 2rem;
+                border-radius: 8px;
+                color: var(--themeT);
+                padding: 0 32px 0 10px;
+                background-color: transparent;
+                border: 2px solid var(--themeT);
+            }
+
+            & .btnname {
+                top: 0;
+                right: 0;
+                display: none;
+                font-size: 1rem;
+                padding: 12px 12px;
+                position: absolute;
+                border: transparent;
+                align-items: center;
+                color: var(--themeT);
+                background-color: transparent;
+            }
+        }
+    }
+
+    & .profileId {
+        display: inline;
+        margin-left: 0.5rem;
+        color: var(--theme4);
+    }
+
+    & .profileBtn {
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-gap: 10px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        grid: auto auto / calc(300px * var(--responsive));
+
+        & .profileButton {
+            width: 100%;
+            color: var(--themeT);
+            background: transparent;
+            border: 2px solid var(--themeT);
+
+            &:hover {
+                color: var(--theme2);
+                background-color: var(--themeT);
+                text-shadow: 0px 0px 0px transparent;
+            }
+
+            &[value="remove"] {
+                border: 0;
+                color: var(--theme);
+                background: var(--themeT);
+
+                &:hover {
+                    border: 0;
+                    color: var(--themeT);
+                    background: var(--theme);
+                }
+            }
+
+            &[value="delete"],
+            &[value="refuse"] {
+                border: 0;
+                color: var(--themeT);
+                background: #ff0000;
+
+                &:hover {
+                    border: 0;
+                    color: #ff0000;
+                    background: var(--themeT);
+                }
+            }
+
+            &[value="unknow"] {
+                color: var(--theme3);
+                border: 2px solid var(--theme3);
+            }
+        }
+    }
+
+    & .profileBtnAddfriend.active {
+        color: var(--themeT);
+        border: 2px solid var(--theme3);
+        background-color: var(--theme3);
+        text-shadow: 0px 0px 0px transparent;
+    }
+
+    /* ===================off=profile====================*/
+    /* ===================on=navbar====================*/
+
+    & .profileNav {
+        top: 0;
+        left: 0;
+        width: 99%;
+        display: flex;
+        overflow-x: auto;
+        position: absolute;
+        align-items: center;
+        color: var(--themeT);
+        justify-content: flex-start;
+        background-color: var(--themeA1);
+        padding: calc(10px * var(--responsive));
+
+        &::-webkit-scrollbar {
+            height: 2px;
+        }
+    }
+
+    /*~ ===================on=content====================*/
+
+    & .content.profileMain {
+        display: flex;
+        flex-direction: column;
+        padding-top: calc(80px * var(--responsive));
+
+        & .content.profileNav .profileNavBtn {
+            border: 0;
+            transition: 0.5s;
+            padding: 10px 30px;
+            border-radius: 10px;
+            color: var(--themeT);
+            background-color: transparent;
+            text-shadow: 2px 2px 4px var(--themeS);
+            font-size: calc(1.6rem * var(--responsive));
+        }
+
+        &#post .content.profileNav .profileNavBtn.post,
+        &#about .content.profileNav .profileNavBtn.about,
+        &#friend .content.profileNav .profileNavBtn.friend {
+            color: var(--theme1);
+            background-color: var(--themeT);
+            text-shadow: 0px 0px 0px transparent;
+            box-shadow: 1px 1px 4px 1px var(--themeS);
+        }
+
+        /* ===================off=navbar====================*/
+
+        &#post .contentProfile.post,
+        &#about .contentProfile.about,
+        &#friend .contentProfile.friend {
+            display: block;
+        }
+
+        & .contentProfile {
+            width: 100%;
+            display: none;
+
+            /* ===================on=friendcontent====================*/
+
+            &.friend {
+
+                & .requestList,
+                & .friendList {
+
+                    & :is(::-webkit-scrollbar, ::-webkit-scrollbar) {
+                        width: 0px;
+                    }
+
+                    & .showfriend {
+                        display: grid;
+                        background: transparent;
+                        grid-column-gap: calc(15px * var(--responsive));
+                        grid: calc(25px * var(--responsive)) calc(25px * var(--responsive)) / calc(50px * var(--responsive)) auto;
+
+                        & span {
+                            color: var(--themeT);
+                            font-size: calc(18px * var(--responsive));
+                            font-weight: calc(500 * var(--responsive));
+                        }
+
+                        & p {
+                            color: var(--theme4);
+
+                            &.friend {
+                                display: flex;
+                                grid-column: 2 / 2;
+                                font-size: calc(1rem * var(--responsive));
+                            }
+                        }
+                    }
+                }
+
+                & .getrequest,
+                & .deletefriend,
+                & .refuserequest {
+                    text-shadow: none;
+                    color: var(--theme);
+                    background: var(--themeT);
+                    padding: calc(10px * var(--responsive));
+                    font-size: calc(1rem * var(--responsive));
+                    box-shadow: 1px 1px 4px 1px var(--themeS);
+                    border-radius: calc(8px * var(--responsive));
+                }
+
+                & .deletefriend,
+                & .refuserequest {
+                    color: var(--themeT);
+                    background: #ff0000;
+                }
+            }
+
+            /* ===================off=friendcontent====================*/
+        }
+    }
+
+    /*~ ===================off=content====================*/
+    /* ===================on=edit====================*/
+
+    & .showprofile .round {
+        bottom: 5px;
+        right: 5px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background: var(--theme1);
+        border: 3px solid var(--themeB);
+        box-shadow: 1px 1px 4px 1px var(--themeS);
+    }
+
+    & .addprofile {
+        z-index: 7000;
+        top: 210px;
+        left: 130px;
+        width: 35px;
+        height: 35px;
+        display: none;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background: var(--theme1);
+        border: 3px solid var(--themeB);
+        box-shadow: 1px 1px 4px 1px var(--themeS);
+    }
+
+    & .editprofile input[type="file"] {
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        transform: scale(2);
+    }
+
+    & :is(.showprofile .round i, .editprofile i) {
+        font-size: 1rem;
+        color: var(--themeB);
+    }
+
+    & :is(.showprofile .round, .showAccount, .editAccount) {
+        display: none;
+    }
+
+    & :is(.editprofile.active.activeprofile .addprofile, .bordermax.edit .showprofile .round) {
+        display: flex;
+    }
+
+    /* ===================off=edit====================*/
+    /* ===================on=showAccount====================*/
+
+    & .bordermax.edit .showAccount {
+        display: block;
+
+        & .personInfo {
+            list-style: none;
+            font-size: calc(1.5rem * var(--responsive));
+
+            & li {
+                display: grid;
+                align-items: center;
+                grid-template-columns: calc(4rem * var(--responsive)) auto calc(10rem * var(--responsive));
+
+                & i,
+                & .icon {
+                    grid-row: 1 / 3;
+                    color: var(--themeB);
+                    font-size: calc(3rem * var(--responsive));
+                }
+
+                & .icon {
+                    width: calc(3rem * var(--responsive));
+                }
+
+                & .edit {
+                    padding: 0 1rem;
+                    grid-row: 1 / 3;
+                    grid-column: 3 / 3;
+                    align-items: center;
+                    display: inline-flex;
+                    color: var(--themeT);
+                    justify-content: center;
+                    background: var(--theme);
+                    width: calc(10rem * var(--responsive));
+                    height: calc(3rem * var(--responsive));
+                    font-size: calc(1rem * var(--responsive));
+
+                    & i {
+                        color: var(--themeT);
+                        font-size: calc(1rem * var(--responsive));
+                    }
+
+                    &:hover {
+                        color: var(--theme);
+                        background: var(--themeT);
+
+                        & i {
+                            color: var(--theme);
+                        }
+                    }
+                }
+
+                & .showtext {
+                    grid-row: 2 / 2;
+                    color: var(--themeAT);
+                    display: inline-flex;
+                    font-size: calc(1rem * var(--responsive));
+                }
+            }
+        }
+
+        & .btnshow {
+            content: "";
+        }
+
+        & .title {
+            display: block;
+            font-weight: 500;
+            text-align: center;
+            color: var(--themeT);
+            font-size: calc(1.2rem * var(--responsive));
+        }
+
+        & .profileDelete {
+            width: 100%;
+            color: red;
+            text-align: center;
+            background: transparent;
+            border: 2px solid red;
+            padding: calc(6px * var(--responsive));
+            font-size: calc(1.5rem * var(--responsive));
+            border-radius: calc(6px * var(--responsive));
+
+            &:hover {
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+
+    /* ===================off=showAccount====================*/
+    /* ===================on=editprofile====================*/
+
+    & .backeditprofile {
+        z-index: 5000;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    & .active {
+
+        &.editprofile,
+        &.backeditprofile {
+            display: flex;
+        }
+    }
+
+    & .naveditprofile {
+        left: 3%;
+        top: 20px;
+        width: 94%;
+        height: 70px;
+        padding: 10px;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: absolute;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: var(--themeA1);
+
+        &::-webkit-scrollbar {
+            height: 2px;
+        }
+
+        & .page {
+            padding: 10px;
+            display: flex;
+            font-size: 1.2rem;
+            align-items: center;
+            border-radius: 10px;
+            color: var(--themeT);
+            background: transparent;
+        }
+    }
+
+    & .formchoose {
+        width: 100%;
+        height: 100%;
+    }
+
+    & .chooseprofile,
+    & .chooseborder,
+    & .chooseshape,
+    & .choosebackground {
+        width: 100%;
+        height: 100%;
+        display: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    & .choose {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        position: relative;
+
+        & .checked {
+            z-index: -1;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: var(--themeT);
+            box-shadow: 0 0 10px 10px var(--themeT);
+        }
+
+        &.active .checked {
+            opacity: 1;
+        }
+
+        & .shape {
+            background: var(--theme);
+        }
+
+        & img,
+        & .profile,
+        & .profiles {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        & .upload {
+            width: 40%;
+            height: 40%;
+            right: -10%;
+            bottom: -10%;
+            display: flex;
+            overflow: hidden;
+            position: absolute;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            background: var(--theme2);
+            border: calc(3px * var(--responsive)) solid var(--themeB);
+
+            & i {
+                font-size: calc(1rem * var(--responsive));
+            }
+        }
+
+        & .icon {
+            width: 40%;
+            height: 40%;
+            right: -10%;
+            bottom: -10%;
+        }
+
+        & input[type="radio"] {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            cursor: pointer;
+            border-radius: 0;
+
+            /* &:checked {
+                opacity: 1;
+
+                &::before {
+                    content: "";
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--themeT);
+                    box-shadow: 0 0 10px 10px var(--themeT);
+                }
+            } */
+        }
+
+        & form {
+            right: -10%;
+            bottom: -10%;
+        }
+    }
+
+    & .editprofile {
+        z-index: 6000;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 600px;
+        display: none;
+        position: fixed;
+        border-radius: 10px;
+        padding: 100px 20px 80px 20px;
+        background-color: var(--themeA3);
+        text-shadow: 2px 2px 4px var(--themeS);
+        border: var(--themeZB) solid var(--themeB);
+        transform: translateX(-50%) translateY(-50%);
+
+        &#pageprofile .naveditprofile .pageprofile,
+        &#pageborder .naveditprofile .pageborder,
+        &#pageshape .naveditprofile .pageshape,
+        &#pagebackground .naveditprofile .pagebackground {
+            color: var(--theme);
+            background-color: var(--themeT);
+        }
+
+        &#pageprofile .chooseprofile,
+        &#pageborder .chooseborder,
+        &#pageshape .chooseshape,
+        &#pagebackground .choosebackground {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+    }
+
+    & .canceleditprofile,
+    & .saveeditprofile {
+        width: 100px;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-shadow: none;
+        position: absolute;
+        align-items: center;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    & .canceleditprofile {
+        right: 160px;
+        bottom: 20px;
+        color: var(--themeT);
+        background: transparent;
+        border: 2px solid var(--themeT);
+    }
+
+    & .saveeditprofile {
+        right: 40px;
+        bottom: 20px;
+        color: var(--theme);
+        background: var(--themeT);
+    }
+
+    & .bordermax.edit {
+        & .profileName {
+            & .editname {
+                width: calc(400px * var(--responsive));
+            }
+
+            & .name,
+            & .profileId {
+                display: none;
+            }
+
+            & .inputname,
+            & .btnname {
+                display: flex;
+            }
+        }
+
+        & .profileFriend {
+            display: none;
+        }
+
+        & .profileBtnEdit {
+            color: var(--theme2);
+            background-color: var(--themeT);
+            text-shadow: 0px 0px 0px transparent;
+        }
+
+        & .content.profileMain {
+            display: none;
+        }
+
+        & .editAccount {
+            display: block;
+        }
+    }
+
+    /* ===================off=editprofile====================*/
+}
+
+@media screen and (max-width: 880px) {
+    .srccontent.profile .editprofile {
+        width: 100%;
+    }
+
+    .srccontent.profile .naveditprofile .page {
+        font-size: 1rem;
+    }
+
+    .srccontent.profile .editprofile .formchoose .choose {
+        width: 80px;
+        height: 80px;
+        margin: 17.5px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        top: 190px;
+        left: 110px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .srccontent.profile .editprofile .formchoose .choose {
+        width: 60px;
+        height: 60px;
+        margin: 15px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile {
+        top: 170px;
+        left: 90px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .srccontent.profile .editprofile.active .addprofile i {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    ul.profileName {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .formProfile {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .profilelogout {
+        width: 125px;
+        font-size: 1.25rem;
+    }
+
+    ul.profileName {
+        display: flex;
+        margin-left: 0;
+        font-size: 1.5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profileNav button {
+        font-size: 0.8rem;
+        padding: 5px 15px;
+    }
+
+    .srccontent.profile .formProfile {
+        gap: 0;
+        justify-items: center;
+        justify-content: center;
+        grid: calc(160px * var(--responsive)) auto auto / auto;
+    }
+
+    .srccontent.profile .profileBtn {
+        position: relative;
+    }
+}

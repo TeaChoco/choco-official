@@ -1,0 +1,124 @@
+.srccontent.applications {
+    /* ======================on-link======================= */
+
+    & .showApplication {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .linktoinfoapp {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        color: var(--themeT);
+        text-decoration: none;
+        background: var(--theme2);
+        padding: calc(16px * var(--responsive));
+        grid: calc(120px * var(--responsive)) / calc(180px * var(--responsive)) auto calc(280px * var(--responsive2));
+
+        &:hover {
+            background: var(--theme1);
+        }
+
+        & .imgapp {
+            border-radius: 10px;
+            width: calc(160px * var(--responsive));
+            height: calc(120px * var(--responsive));
+        }
+
+        & .left {
+            height: 100%;
+            display: grid;
+            max-width: 100%;
+            grid: calc(2.5rem * var(--responsive2)) calc(1rem * var(--responsive2)) auto / auto;
+        }
+
+        & .nameapp {
+            display: flex;
+            overflow: hidden;
+            text-align: start;
+            position: relative;
+            color: var(--themeT);
+            white-space: initial;
+            text-overflow: ellipsis;
+            font-size: calc(2rem * var(--responsive2));
+        }
+
+        & .priceapp {
+            display: flex;
+            font-size: calc(1rem * var(--responsive2));
+        }
+
+        & .explanationapp {
+            display: flex;
+            min-width: 100%;
+            overflow: hidden;
+            text-align: start;
+            white-space: initial;
+            color: var(--theme4);
+            text-overflow: ellipsis;
+            font-size: calc(0.8rem * var(--responsive));
+        }
+
+        & .right {
+            width: 100%;
+            display: grid;
+            margin-left: auto;
+            position: relative;
+            justify-items: end;
+            grid: calc(2rem * var(--responsive2)) calc(1.5rem * var(--responsive)) 4rem / auto;
+        }
+
+        & .ratingapp {
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: flex-end;
+            height: calc(2rem * var(--responsive2));
+            font-size: calc(1.8rem * var(--responsive2));
+        }
+
+        & .versionapp {
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: calc(1rem * var(--responsive));
+        }
+
+        & .typeapp {
+            height: 100%;
+            display: grid;
+            overflow: hidden;
+            justify-items: start;
+            grid-gap: calc(0.2rem * var(--responsive));
+            grid: 1fr 1fr 1fr / auto auto auto auto auto;
+        }
+    }
+
+    /* ======================off-link======================= */
+}
+
+@media screen and (max-width: 780px) {
+    .srccontent.applications .linktoinfoapp {
+        grid: calc(120px * var(--responsive)) / calc(180px * var(--responsive)) auto calc(230px * var(--responsive2));
+    }
+
+    .srccontent.applications .linktoinfoapp .typeapp {
+        grid: 1fr 1fr 1fr / auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .srccontent.applications .linktoinfoapp .typeapp {
+        grid: 1fr 1fr 1fr / auto auto auto;
+    }
+
+    .srccontent.applications .linktoinfoapp {
+        grid: calc(120px * var(--responsive)) / calc(180px * var(--responsive)) auto calc(180px * var(--responsive2));
+    }
+}
