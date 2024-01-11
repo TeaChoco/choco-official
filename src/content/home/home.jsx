@@ -1,6 +1,6 @@
 import "./css/home.css";
-import React from "react";
 import l from "./../../lang/lang.jsx";
+import icon from "./../../public/img/icon.png";
 
 export default function home() {
     return (
@@ -8,13 +8,11 @@ export default function home() {
             <div className="bordermax">
                 <div className="contenttitle">
                     <img
-                        src="/icon.png"
+                        src={icon}
                         alt="icon web"
                         className="imgchocowebicon"
                     />
-                    <p className="textwelcome">
-                        {l("home.welcome")}
-                    </p>
+                    <p className="textwelcome">{l("home.welcome")}</p>
                 </div>
                 <div className="section"></div>
                 <div className="section features"></div>

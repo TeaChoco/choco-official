@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navlist from "./components/navlist";
 import NavProfile from "./components/navProfile";
 import { useState } from "react";
+import icon from "./../../public/img/icon.png";
 
 export default function navbar({ funOpenMenu }) {
     const [openNavMenu, setOpenNavMenu] = useState(false);
@@ -26,7 +27,7 @@ export default function navbar({ funOpenMenu }) {
                     <div className="buttonMenubar3"></div>
                 </div>
                 <Link to="/">
-                    <img src="/icon.png" id="icon"></img>
+                    <img src={icon} id="icon"></img>
                 </Link>
                 <div className="navigation">
                     <ul>
