@@ -14,7 +14,7 @@ export default function main() {
     const router = createBrowserRouter(
         createRoutesFromElements(
             <>
-                <Route path="/choco-official/" element={<Showcase />}>
+                <Route path="/" element={<Showcase />}>
                     <Route index element={<ComponentSelector page="home" />} />
                     <Route
                         path="/:page/login"
